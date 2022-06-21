@@ -28,5 +28,7 @@
   "bugs": {
     "url": "https://github.com/lieuwebakker/panadero-strategies/issues"
   },
-  "homepage": "https://github.com/lieuwebakker/panadero-strategies#readme"
+  "homepage": "https://github.com/lieuwebakker/panadero-strategies#readme",
+  "dependencies": {
+  }
 }

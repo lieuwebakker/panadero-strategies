@@ -22,7 +22,10 @@ class panaderoStrategies {
     this.code = _code;
   }
 
-
+/** calcSlots 1 : Default Grid 
+ * these are equal steps
+ * copied from botsTrading
+*/
 async calcRegularGrid (e) {
     var T = this;
     var o=e.objective;
@@ -65,7 +68,11 @@ async calcRegularGrid (e) {
     })
   }
 
-  async calcParaboleGrid (e) {
+/** calcSlots 2 : Parabolic Grid
+ * increasing steps to boundaries
+ * copied from bots: p0ng
+*/
+  async calcAdvancedGrid (e) {
     var T = this;
     var o=e.objective;
     var c=e.change;
@@ -126,18 +133,47 @@ async calcRegularGrid (e) {
     });
   }
 
+/** SignalTrading
+ * signals provided by ioSocket
+ * 
+*/
 async calcRegularSignal (e) {
-}
+  const check = async () => {
+        try {
+           resolve();
+        } catch (err) {
+          console.log('errrrror.. ....'+ err); 
+          process.exit(1);
+        }
+      }
+      check();
+    });
 
+/** PairsTrading
+ * signals provided by ioSocket
+ * 
+*/
 async calcPairsTrading (e) {
 }
 
+/** Short - Long strategy
+ * see Alpaca scripts
+ * 
+*/
 async calcShortLong (e) {
 }
 
+/** SignalTrading
+ * signals provided by TradingView
+ * 
+*/
 async calcTradingViewSignal1 (e) {
 }
 
+/** SignalTrading
+ * signals provided by TradingView
+ * 
+*/
 async calcTradingViewSignal2 (e) {
 }
 
