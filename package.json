@@ -1,0 +1,32 @@
+{
+  "name": "panadero-strategies",
+  "version": "1.0.0",
+  "description": "bots panadero autotrader server crypto stock nasday giro interact blockchain modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lieuwebakker/panadero-strategies.git"
+  },
+  "keywords": [
+    "bots",
+    "panadero",
+    "autotrader",
+    "server",
+    "crypto",
+    "stock",
+    "nasdaq",
+    "degior",
+    "interact",
+    "blockchain",
+    "modulair"
+  ],
+  "author": "Luis Panadero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lieuwebakker/panadero-strategies/issues"
+  },
+  "homepage": "https://github.com/lieuwebakker/panadero-strategies#readme"
+}
