@@ -1,0 +1,16 @@
+# Logs
+logs
+
+node_modules/
+
+
+.npm
+
+.commands
+
+dist
+
+# Gatsby files
+.cache/
+
+.env
