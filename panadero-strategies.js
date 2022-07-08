@@ -3,8 +3,8 @@
 // *   MODULE : panadero-strategies.js           * *  
 // *   Location i5v0/build/panadero-strategies   * * 
 // *   Modified :JaWsome.Orbit   *                 * 
-// *   Date:    21 jun 2022             *          *
-// *   Version: v1.0.0.            *        *      *
+// *   Date:    28 jun 2022             *          *
+// *   Version: v1.0.1.            *        *      *
 // ** *     *       *   *       *   *   *   *     **
 // * *  *       *     *      *   *       *  *  * * *
 
@@ -142,12 +142,12 @@ async calcRegularSignal (e) {
         try {
            resolve();
         } catch (err) {
-          console.log('errrrror.. ....'+ err); 
+          console.log('errrrror.. this is not good calcRegularSignal() ....'+ err); 
           process.exit(1);
         }
       }
       check();
-    });
+    }
 
 /** PairsTrading
  * signals provided by ioSocket
@@ -176,9 +176,6 @@ async calcTradingViewSignal1 (e) {
 */
 async calcTradingViewSignal2 (e) {
 }
-
-
-
 
 
 }
