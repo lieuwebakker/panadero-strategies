@@ -1,6 +1,6 @@
 {
   "name": "panadero-strategies",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "bots panadero autotrader server crypto stock nasday giro interact blockchain modules",
   "main": "index.js",
   "scripts": {

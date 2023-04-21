@@ -4,14 +4,15 @@
 // *   Location i5v0/build/panadero-strategies   * * 
 // *   Modified :JaWsome.Orbit   *                 * 
 // *   Date:    28 jun 2022             *          *
-// *   Version: v1.0.1.            *        *      *
+// *   Version: v1.0.2.            *        *      *
 // ** *     *       *   *       *   *   *   *     **
 // * *  *       *     *      *   *       *  *  * * *
 
 /**
  * Trading Strategies 
  * 
- *  
+ * change v1.0.2 
+ * 18.04.23 .sellProfit --> profit 
  */
 
 "use strict"; 
@@ -51,7 +52,7 @@ async calcRegularGrid (e) {
           }
           if (s>0){
             aS[s-1].order='sell';
-            e.sellProfit = ((aS[s-1].sell - aS[s-1].buy)*e.q_per_slot*0.998).toFixed(8); //(0.2% comission)
+            e.profit = ((aS[s-1].sell - aS[s-1].buy)*e.q_per_slot*0.998).toFixed(8); //(0.2% comission)
             e.sell_at=aS[s-1].sell;
           }
           if (s<sMax){
@@ -110,18 +111,18 @@ async calcRegularGrid (e) {
       // set slot.order= sell  at slot - 1
            if (sl>0){
               aS[sl-1].order='sell';
-      // set sellprofit
-              e.sellProfit =  (aS[sl-1].p *0.998).toFixed(8); //(0.2% comission)
+      // set profit
+              e.profit = (aS[sl-1].p *0.998).toFixed(8); //(0.2% comission)
 
       // set e.sell_at  
-              e.sell_at=aS[sl-1].sell;
+              e.sell_at = aS[sl-1].sell;
             }
 
             if (sl<mx){
       // set slot.order =buy
               aS[sl].order='buy';
       // set e.buy_at
-              e.buy_at=aS[sl].buy;
+              e.buy_at = aS[sl].buy;
            }
            resolve(aS);
         } catch (err) {
